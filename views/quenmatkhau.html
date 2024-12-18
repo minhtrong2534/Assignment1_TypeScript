@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên Mật Khẩu</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('images/hinh-nen-mau-do-2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body ng-app="myapp">
+    <div class="container mt-5" ng-ctroller="guimactrl">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="text-center">Quên Mật Khẩu</h3>
+              </div>
+              <div class="card-body">
+                <form ng-submit="guima()">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Địa chỉ Email</label>
+                    <input type="email" class="form-control" id="email" ng-model="email" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Gửi Mã OTP</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="angular-1.8.2/angular-1.8.2/angular.min.js"></script>
+      <script src="quenmatkhau.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/77eced6b9d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

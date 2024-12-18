@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Đăng Ký</title>
+    <style>
+        body {
+            background-image: url('images/hinh-nen-mau-do-2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body ng-app="myapp">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Đổi Mật Khẩu</h3>
+                    </div>
+                    <div class="card-body">
+                        <form ng-submit="changePassword()">
+                            <div class="mb-3">
+                                <label for="oldPassword" class="form-label">Mật khẩu cũ:</label>
+                                <input type="password" class="form-control" id="oldPassword" ng-model="users.oldPassword" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="newPassword" class="form-label">Mật khẩu mới:</label>
+                                <input type="password" class="form-control" id="newPassword" ng-model="users.newPassword" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu mới:</label>
+                                <input type="password" class="form-control" id="confirmPassword" ng-model="users.confirmPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" ng-click="web(#!dangnhap)">Đổi mật khẩu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="angular-1.8.2/angular-1.8.2/angular.min.js"></script>
+    <script src="angular-1.8.2/angular-1.8.2/angular-route.min.js"></script>
+    <script src="doimatkhau.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/77eced6b9d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script> -->
+</body>
+</html>

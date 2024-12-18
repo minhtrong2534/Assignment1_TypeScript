@@ -1,0 +1,29 @@
+header{
+   
+    background-color: red;
+}
+/* nav{
+    background-color: red;
+    text-align: center;
+    
+} */
+.nav-link:hover{
+    color: white;
+}
+.card-wrapper{
+    display: flex;
+}
+.pc-title{
+    color: white;
+}
+.pc-title:hover{
+    color: black;
+}
+.footer{
+    text-decoration: none;
+    color: black;
+}
+.footer:hover{
+    color: red;
+    text-decoration: solid;
+}

@@ -1,0 +1,219 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="poly.css">
+</head> -->
+
+<body ng-app="myapp"  ng-controller="myctrl">
+  <header>
+    <img src="images/banner_gear_-_banner_top_ba1c84d.jpg" class="w-100 bg-danger" alt="" style="height: 50px;">
+    <!-- <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: white;" href="#!home"><img src="images/Untitled.png" class="w-25"
+            alt="">GIGA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-list"></i>
+                Danh Mục
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                <li><a class="dropdown-item" href="">PC GVN</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Main,CPU,VGA,Tản</a></li>
+                <li><a class="dropdown-item" href="#">Case-Nguồn-Phụ kiện</a></li>
+                <li><a class="dropdown-item" href="#">Ổ Cứng, Ram, Thẻ nhớ</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Màn Hình</a></li>
+                <li><a class="dropdown-item" href="#">Bàn Phím</a></li>
+                <li><a class="dropdown-item" href="#">Chuột + Lót Chuột</a></li>
+                <li><a class="dropdown-item" href="#">Tai Nghe - Loa</a></li>
+                <li><a class="dropdown-item" href="#">Ghế - Bàn</a></li>
+              </ul>
+            <li>
+              <nav class="navbar ">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                      ng-model="keyword">
+                    <button class="btn btn-outline-light" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!tintuc"><i class="fa-regular fa-newspaper"></i>Tin Công Nghệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-phone-volume"></i>Liên Hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i>Hệ Thống Cửa Hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-shield"></i>Chính Sách Bảo Hành</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!cart"><i class="fa-solid fa-cart-shopping"></i>Giỏ Hàng</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng
+              Nhập</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng Nhập</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput" class="form-label">Tên Đăng Nhập</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label">Mật Khẩu</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" required>
+                      <div class="mt-3"> Nếu bạn quên mật khẩu:
+                        <a href="quenmatkhau.html" class="text-decoration-none text-primary">Quên Mật Khẩu?</a>
+                      </div>
+                      <div class="mb-3">
+                        <button type="button" class="btn btn-dark mt-3 w-100">Đăng Nhập</button>
+                      </div>
+                      <hr>
+                      <div class="mb-3"> Đăng Nhập Bằng Cách Khác:
+                        <a href="#" class="me-5 mx-5"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-5 mx-5"><i class="fa-brands fa-google"></i></a>
+                      </div>
+                      <div class="mb-3"> Nếu bạn chưa có tài khoản:
+                        <a href="dangky.html" class="text-decoration-none text-primary">Đăng Ký Ngay?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav> -->
+  </header>
+  <div class="container">
+    <div class="row">
+      <img src="images/banner4.png" alt="" class="col-6">
+      <img src="images/banner3.png" alt="" class="col-6">
+      <div class="row">
+        <div class="mb-2 mt-2">
+          <button class="btn btn-primary" ng-click="sortBy('name')">Sắp Xếp Theo Tên</button>
+          <button class="btn btn-primary" ng-click="sortBy('price2')">Sắp Xếp Theo Giá</button>
+          <button class="btn btn-primary" ng-click="sortBy('giamgia')">Sắp Xếp Theo Giảm Giá</button>
+          <button class="btn btn-primary" ng-click="sortBy('danhgia')">Sắp Xếp Theo Đánh Giá</button>
+          <input type="text" class="form-control mb-2 mt-2" ng-model="keyword" placeholder="Tìm Kiếm Sản Phẩm">
+          <button class="btn btn-primary" ng-click="filterByType('PC')"> PC</button>
+          <button class="btn btn-primary" ng-click="filterByType('Laptop')">Laptop</button>
+          <button class="btn btn-primary" ng-click="showAllProducts()">Tất Cả</button>
+        </div>
+        <div class="card col-3 mb-2 mt-2" ng-repeat="sp in dsSP|orderBy:prop|filter:{name:keyword}| limitTo:limit:start">
+          <div class="card-body">
+            <img ng-src="{{sp.image}}" class="card-img-top">
+            <a href="#!detail/{{sp.id}}" class="text-decoration-none">
+              <h5 class="card-title text-black">{{sp.name}}</h5>
+            </a>
+            <div class="row card-text">
+              <p class="col-6"><i class="fa-solid fa-microchip"></i>{{sp.tp1}}</p>
+              <p class="col-6"><i class="fa-solid fa-vr-cardboard"></i>{{sp.tp2}}</p>
+              <p class="col-4"><i class="fa-solid fa-keyboard"></i>{{sp.tp3}}</p>
+              <p class="col-4"><i class="fa-solid fa-memory"></i>{{sp.tp4}} </p>
+              <p class="col-4"><i class="fa-solid fa-sd-card"></i>{{sp.tp5}}</p>
+            </div>
+            <del>{{sp.price1 |number:0}}đ</del>
+            <p class="text-danger"><strong> {{sp.price2 |number:0}}đ</strong> <span
+                class="badge text-bg-danger">{{sp.giamgia}}%</span></p>
+            <p class="text-warning">Đánh Giá: {{sp.danhgia}}<i class="fa-solid fa-star"></i></p>
+          </div>
+          <div class="mb-2">
+            <button class="btn btn-danger w-50 offset-3" ng-click="addtoCart(sp)">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination offset-5 mt-2">
+          <li class="page-item">
+            <button class="page-link {{(page==1)?'disabled':''}}" href="#" aria-label="Previous" ng-click="chuyenTrang(page-1)">
+              <span aria-hidden="true">&laquo;</span>
+            </button>
+          </li>
+          <li class="page-item {{(page==trang)?'active':''}}" ng-repeat="trang in dsTrang"><button class="page-link" href="#" ng-click="chuyenTrang(trang)">{{trang}}</button></li>
+          <li class="page-item">
+            <button class="page-link {{(page==totalPage)?'disabled':''}}" href="#" aria-label="Next" ng-click="chuyenTrang(page+1)">
+              <span aria-hidden="true">&raquo;</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+  <footer class="text-bg-light mt-4">
+    <div class="row">
+      <div class=" col-3 ">
+        <h3>Về GIGAVN</h3>
+        <a href="#" class="footer">Giới Thiệu</a> <br>
+        <a href="#" class="footer">Tuyển Dụng</a>
+      </div>
+      <div class=" col-3">
+        <h3>Chính Sách</h3>
+        <a href="#" class="footer">Chính Sách Bảo Hành</a> <br>
+        <a href="#" class="footer">Chính Sách Thanh Toán</a> <br>
+        <a href="#" class="footer">Chính Sách Giao Hàng</a><br>
+        <a href="#" class="footer">Chính Sách Bảo Mật</a><br>
+      </div>
+      <div class=" col-3">
+        <h3>Thông Tin Và Hổ Trợ</h3>
+        <a href="#" class="footer">Hệ Thống Cửa Hàng</a><br>
+        <a href="#" class="footer">Trung Tâm Bảo Hành</a> <br>
+        <a href="#" class="footer">CSKH: 1900.1008</a> <br>
+      </div>
+      <div class=" col-3">
+        <h3>Cách Thức Thanh Toán</h3>
+        <img src="images/pay_1.png" alt="" class="w-25">
+        <img src="images/pay_2.png" alt="" class="w-25">
+        <img src="images/pay_3.png" alt="" class="w-25">
+        <img src="images/pay_4.png" alt="" class="w-25">
+        <img src="images/pay_5.png" alt="" class="w-25">
+        <img src="images/pay_6.png" alt="" class="w-25">
+        <img src="images/pay_7.png" alt="" class="w-25">
+        <img src="images/pay_8.png" alt="" class="w-25">
+      </div>
+    </div>
+  </footer>
+  </div>
+  <!-- <script src="angular-1.8.2/angular-1.8.2/angular.min.js"></script>
+  <script src="angular-1.8.2/angular-1.8.2/angular-route.min.js"></script>
+  <script src="sanpham.js"></script>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/77eced6b9d.js" crossorigin="anonymous"></script> -->
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

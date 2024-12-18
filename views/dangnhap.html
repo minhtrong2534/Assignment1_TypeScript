@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            background-image: url('images/hinh-nen-mau-do-2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body ng-app="myapp">
+    <div class="container mt-5" ng-controller="dangnhapctrl">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Đăng Nhập</h3>
+                    </div>
+                    <div class="card-body">
+                        <form ng-submit="login()">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Tên người dùng:</label>
+                                <input type="text" class="form-control" id="username" ng-model="user.username" required>
+                                username không được để trống
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="password" ng-model="user.password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" ng-click="doiweb('#!home')">Đăng nhập</button>
+                            <div class="mt-3"> Nếu bạn quên mật khẩu:
+                                <a href="#!doimatkhau" class="text-decoration-none text-primary">Đổi Mật Khẩu?</a>
+                              </div>
+                            <div class="mb-3"> Đăng Nhập Bằng Cách Khác:
+                                <a href="#" class="me-5 mx-5"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="me-5 mx-5"><i class="fa-brands fa-google"></i></a>
+                              </div>
+                              <div class="mb-3"> Nếu bạn chưa có tài khoản:
+                                <a href="#!dangky" class="text-decoration-none text-primary">Đăng Ký Ngay?</a>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="angular-1.8.2/angular-1.8.2/angular.min.js"></script>
+    <script src="angular-1.8.2/angular-1.8.2/angular-route.min.js"></script>
+    <script src="dangky.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/77eced6b9d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script> -->
+</body>
+</html>
